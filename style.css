@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+   box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    /* Removed justify-content and align-items as they have no effect without display:flex */
+}
+.container{
+    background: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 25px 35px;
+    position: absolute;
+    border-color: whitesmoke;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+}
+.container p{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.container input{
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1px;
+}
+.container button{
+    padding: 5px;
+    background-color: rgb(167, 164, 180);
+    border-width: 1px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+
+#imagebox{
+    margin-left: 24%;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+#Qrtext.shake {
+  animation: shake 0.3s;
+  border-color: gray;
+}
+
+#errorMsg {
+  color: gray;
+  font-size: 0.8em;
+  margin-top: 2px;
+  height: 1em;
+  font-weight: normal;
+}
